@@ -28,37 +28,49 @@
                         <div class="flex flex-col md:flex-row my-8 justify-center items-center ">
                             <div class="w-full md:p-10">
                                 <div class="p-4">
-                                    <p class="font-serif text-color-desc-darker text-justify md:text-2xl mb-4">Hello So Nice To Meet you!, Im Julian the founder and dreamer behind Julian Photography who's passionate about making
+                                    <p class="font-serif text-color-desc-darker text-justify md:text-2xl mb-4">Hello So Nice
+                                        To Meet you!, Im Julian the founder and dreamer behind Julian Photography who's
+                                        passionate about making
                                         those images come to life.</p>
                                 </div>
                             </div>
                             <div class="w-full  bg-orange-100 rounded-md ">
-                                
+
                                 <div class="p-8">
                                     <p class="font-serif text-color-desc-darker text-justify md:text-2xl mb-4">
-                                       <span>In my photography,</span> <br>
-                                        
-                                        
-                                        I'm using professional equipment and simple props and Edit by Photoshop & Lightroom to get my style look that I'm happy with and also little adjust with my clients' needs.
-                                        
-                                         
-                                        
-                                        my style trying to be unique, natural, fresh outdoor, keep it nice, simple, and also modern touch. 
-                                        
+                                        <span>In my photography,</span> <br>
+
+
+                                        I'm using professional equipment and simple props and Edit by Photoshop & Lightroom
+                                        to get my style look that I'm happy with and also little adjust with my clients'
+                                        needs.
+
+
+
+                                        my style trying to be unique, natural, fresh outdoor, keep it nice, simple, and also
+                                        modern touch.
+
                                         ​
-                                        
-                                        My goal is to capture that moment when that telling me the story and finding art in photography.
-                                        
+
+                                        My goal is to capture that moment when that telling me the story and finding art in
+                                        photography.
+
                                         ​
-                                        
-                                        Get ready for your beautiful moment to be captured I'm so excited to meet you all.</p>
+
+                                        Get ready for your beautiful moment to be captured I'm so excited to meet you all.
+                                    </p>
                                 </div>
                             </div>
                         </div>
+                        <a
+                            href="https://api.whatsapp.com/send?phone=+61 451 345 051&text=hey julian%20I%20want%20to%20make%20reservation%20">
+                            <button type="button"
+                                class="text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><i
+                                    class="fa-brands fa-whatsapp"></i> Whatsapp</button>
+                        </a>
                         <button type="button"
-                            class="text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><i class="fa-brands fa-whatsapp"></i> Whatsapp</button>
-                        <button type="button"
-                            class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><i class="fa-brands fa-instagram"></i> Instagram</button>
+                            class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><i
+                                class="fa-brands fa-instagram"></i> Instagram</button>
                     </div>
                 </div>
 

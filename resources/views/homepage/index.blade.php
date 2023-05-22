@@ -95,7 +95,7 @@
                         all
                         about
                         capturing the candid & the raw moments of your special day and your loved ones.</p>
-                    <a href="https://api.whatsapp.com/send?phone=+61 451 345 051&text=Want_get_reservation">
+                    <a href="https://api.whatsapp.com/send?phone=+61 451 345 051&text=hey julian%20I%20want%20to%20make%20reservation%20">
                         <button type="button"
                             class="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Booking
                             Now!</button>
