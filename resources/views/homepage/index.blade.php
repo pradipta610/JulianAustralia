@@ -61,8 +61,8 @@
                         data-carousel-prev>
                         <span
                             class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 "
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 " fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
                                 </path>
                             </svg>
@@ -74,8 +74,8 @@
                         data-carousel-next>
                         <span
                             class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30  group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
-                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 "
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 " fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
                                 </path>
                             </svg>
@@ -95,21 +95,24 @@
                         all
                         about
                         capturing the candid & the raw moments of your special day and your loved ones.</p>
-                    <button type="button"
-                        class="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Booking
-                        Now!</button>
+                    <a href="https://api.whatsapp.com/send?phone=+61 451 345 051&text=Want_get_reservation">
+                        <button type="button"
+                            class="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Booking
+                            Now!</button>
+                    </a>
                 </div>
-                
-<div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
-    <div class="flex justify-center items-center">
 
-        <div class="w-[80%] ">
-    
-            <img src="https://www.pangolinphoto.com/wp-content/uploads/2020/05/Guest-with-camera-gear-on-safari-in-Botswana-Pangolin-Photo-Safaris-scaled.webp" class="w-full object-cover rounded-md mx-auto" alt="">
-        </div>
-    </div>
-</div>
-        
+                <div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
+                    <div class="flex justify-center items-center">
+
+                        <div class="w-[80%] ">
+
+                            <img src="https://www.pangolinphoto.com/wp-content/uploads/2020/05/Guest-with-camera-gear-on-safari-in-Botswana-Pangolin-Photo-Safaris-scaled.webp"
+                                class="w-full object-cover rounded-md mx-auto" alt="">
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
