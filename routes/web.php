@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('homepage.index');
-});
-Route::prefix('gallery')->group(function () {
+})->name('home');
+Route::prefix('gallery')->name('gallery.')->group(function () {
     Route::get('/couple', function () {
         return view('homepage.gallery.couple');
     })->name('couple');

@@ -1,6 +1,6 @@
 @extends('index')
 @section('content')
-    <div class=" bg-orange-50">
+    <div class="bg-white hidden md:block">
         <div class="md:py-0 ">
             <div class="flex gap-7 md:flex-row flex-col pt-14 pb-0 md:pt-0">
                 <div id="default-carousel" class="relative w-full  " data-carousel="slide" data-aos="fade-up">
@@ -86,29 +86,52 @@
             </div>
         </div>
     </div>
-    <div class="py-2 bg-orange-50">
+    <div class="py-2 bg-white">
         <div class="md:py-14 ">
             <div class="flex gap-7 md:flex-row flex-col p-4 my-14">
-                <div class="flex items-start flex-col  justify-center " data-aos="fade-up">
-                    <p class="font-sans md:text-3xl font-semibold mb-4">Welcome To Julian Photography</p>
-                    <p class="font-serif md:text-2xl mb-4">I'm Julian, a Wedding & Family photographer based in Sydney. I am
-                        all
-                        about
-                        capturing the candid & the raw moments of your special day and your loved ones.</p>
-                    <a href="https://api.whatsapp.com/send?phone=+61 451 345 051&text=hey julian%20I%20want%20to%20make%20reservation%20">
-                        <button type="button"
-                            class="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Booking
-                            Now!</button>
-                    </a>
-                </div>
-
-                <div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
+                <div id="custom-controls-gallery" class="relative w-full block md:hidden" data-carousel="slide"
+                    data-aos="fade-up">
                     <div class="flex justify-center items-center">
 
                         <div class="w-[80%] ">
 
-                            <img src="https://www.pangolinphoto.com/wp-content/uploads/2020/05/Guest-with-camera-gear-on-safari-in-Botswana-Pangolin-Photo-Safaris-scaled.webp"
-                                class="w-full object-cover rounded-md mx-auto" alt="">
+                            {{-- <img src="https://www.pangolinphoto.com/wp-content/uploads/2020/05/Guest-with-camera-gear-on-safari-in-Botswana-Pangolin-Photo-Safaris-scaled.webp"
+                                class="w-full object-cover rounded-md mx-auto" alt=""> --}}
+                            <video class="w-full object-cover rounded-md mx-auto" controls>
+                                {{-- <source src=”http://techslides.com/demos/sample-videos/small.ogv” type=video/ogg> --}}
+                                <source src="{{ asset('/img/vid/1.mp4') }}" type=video/mp4>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-start flex-col  justify-center md:px-4" data-aos="fade-up">
+                    <p class="font-home text-xl md:text-3xl font-semibold mb-4 mx-auto md:mx-2">Welcome to Julian
+                        Photography!</p>
+                    <p class="font-home md:text-2xl mb-4 text-justify px-2"> We are dedicated photographers & videographer
+                        specializing in capturing precious moments. With our expertise and attention to detail, we provide
+                        high-quality photography that reflects your unique personality. From weddings to family portraits,
+                        we offer a range of services tailored to your needs. Explore our gallery and contact us for more
+                        information. Let us help you preserve your special memories with Julian Photography!</p>
+                    <a class="mx-auto md:mx-0"
+                        href="https://api.whatsapp.com/send?phone=+61 451 345 051&text=hey julian%20I%20want%20to%20make%20reservation%20">
+                        <button type="button"
+                            class="text-gray-900  bg-[#FAE4CD] from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Booking
+                            Now!</button>
+                    </a>
+                </div>
+
+                <div id="custom-controls-gallery" class="relative w-full hidden md:block" data-carousel="slide"
+                    data-aos="fade-up">
+                    <div class="flex justify-center items-center">
+
+                        <div class="w-[80%] ">
+
+                            {{-- <img src="https://www.pangolinphoto.com/wp-content/uploads/2020/05/Guest-with-camera-gear-on-safari-in-Botswana-Pangolin-Photo-Safaris-scaled.webp"
+                                class="w-full object-cover rounded-md mx-auto" alt=""> --}}
+                                <video class="w-full object-cover rounded-md mx-auto" controls>
+                                    {{-- <source src=”http://techslides.com/demos/sample-videos/small.ogv” type=video/ogg> --}}
+                                    <source src="{{ asset('/img/vid/1.mp4') }}" type=video/mp4>
+                                </video>
                         </div>
                     </div>
                 </div>
@@ -116,6 +139,142 @@
             </div>
         </div>
     </div>
+    <div class=" bg-white block md:hidden">
+        <div class="md:py-0 px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="grid gap-4">
+                    <div>
+                        <a data-lightbox="image-1" href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
+                            alt=""> <img class="h-auto max-w-full rounded-lg"
+                                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a data-lightbox="image-1"
+                            href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt=""> <img
+                                class="h-auto max-w-full rounded-lg"
+                                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
+                                alt=""></a>
+                    </div>
+                </div>
+                <div class="grid gap-4">
+                    <div>
+                        <a data-lightbox="image-1"
+                            href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt=""> <img
+                                class="h-auto max-w-full rounded-lg"
+                                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
+                                alt=""></a>
+                    </div>
+                    <div>
+                        <a data-lightbox="image-1"
+                            href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt=""> <img
+                                class="h-auto max-w-full rounded-lg"
+                                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
+                                alt=""></a>
+                    </div>
+                </div>
+                <div class="grid gap-4">
+                    <div>
+                        <a data-lightbox="image-1"
+                            href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt=""> <img
+                                class="h-auto max-w-full rounded-lg"
+                                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
+                                alt=""></a>
+                    </div>
+                    <div>
+                        <a data-lightbox="image-1"
+                            href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt=""> <img
+                                class="h-auto max-w-full rounded-lg"
+                                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
+                                alt=""></a>
+                    </div>
+                </div>
+                <div class="grid gap-4">
+                    <div>
+                        <a data-lightbox="image-1"
+                            href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt=""> <img
+                                class="h-auto max-w-full rounded-lg"
+                                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
+                                alt=""></a>
+                    </div>
+                    <div>
+                        <a data-lightbox="image-1"
+                            href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt=""> <img
+                                class="h-auto max-w-full rounded-lg"
+                                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
+                                alt=""></a>
+                    </div>
+                </div>
+                <div class="grid gap-4">
+                    <div>
+                        <a data-lightbox="image-1"
+                            href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt=""> <img
+                                class="h-auto max-w-full rounded-lg"
+                                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
+                                alt=""></a>
+                    </div>
+                    <div>
+                        <a data-lightbox="image-1"
+                            href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt=""> <img
+                                class="h-auto max-w-full rounded-lg"
+                                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
+                                alt=""></a>
+                    </div>
+                </div>
+                <div class="grid gap-4">
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
+                    </div>
+                </div>
+                <div class="grid gap-4">
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="grid gap-4">
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
+                    </div>
+                </div>
+                <div class="grid gap-4">
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="grid gap-4">
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
 
 
 

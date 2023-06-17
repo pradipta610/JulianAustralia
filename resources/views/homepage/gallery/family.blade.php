@@ -6,30 +6,35 @@
             <div class="md:w-[70%] justify-center items-center mx-auto">
                 <p class="font-thin font-gallery-desc text-lg my-4 mx-2"> <span
                         class="font-sans font-bold text-xl mr-2">"</span>
-                    A family photoshoot is more than just capturing the perfect smile of each smiling face. It's about
-                    creating meaningful moments of intimate connection, nurtured by care and love for each other. Nothing
-                    compares to the bond made when everyone involved looks back and shares memories of this wonderful day
-                    spent having fun together.<span class="font-bold text-xl ml-2">"</span></p>
+                    We understand the importance and meaning of family to you. Our commitment is to capture the
+                    togetherness, happiness, and strong bonds among your family members through our photography, allowing
+                    you to truly cherish moments with your loved ones. From traditional family portraits to candid and
+                    playful moments, we strive to capture the uniqueness and personalities of your family.<span
+                        class="font-bold text-xl ml-2">"</span></p>
             </div>
         </div>
         <div class="grid grid-cols md:grid-cols-4 gap-4">
             <div class="grid gap-4">
                 <div>
-                    <a data-lightbox="image-1" href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
-                        alt=""> <img class="h-auto max-w-full rounded-lg"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt=""></a>
+                    <a data-lightbox="image-1" href="{{ asset('img/family-1.jpg') }}" alt=""> <img
+                            class="h-auto max-w-full rounded-lg" src="{{ asset('img/family-1.jpg') }}" alt=""></a>
                 </div>
+            </div>
+            <div class="grid gap-4">
+
                 <div>
-                    <a data-lightbox="image-1" href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
-                        alt=""> <img class="h-auto max-w-full rounded-lg"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt=""></a>
+                    <a data-lightbox="image-1" href="{{ asset('img/family-2.jpg') }}" alt=""> <img
+                            class="h-auto max-w-full rounded-lg" src="{{ asset('img/family-2.jpg') }}" alt=""></a>
                 </div>
+            </div>
+            <div class="grid gap-4">
+
                 <div>
-                    <a data-lightbox="image-1" href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
-                        alt=""> <img class="h-auto max-w-full rounded-lg"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt=""></a>
+                    <a data-lightbox="image-1" href="{{ asset('img/family-3.jpg') }}" alt=""> <img
+                            class="h-auto max-w-full rounded-lg" src="{{ asset('img/family-3.jpg') }}" alt=""></a>
                 </div>
-                <div>
+            </div>
+            {{-- <div>
                     <a data-lightbox="image-1" href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
                         alt=""> <img class="h-auto max-w-full rounded-lg"
                             src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt=""></a>
@@ -38,9 +43,9 @@
                     <a data-lightbox="image-1" href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
                         alt=""> <img class="h-auto max-w-full rounded-lg"
                             src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt=""></a>
-                </div>
-            </div>
-            <div class="grid gap-4">
+                </div> --}}
+        </div>
+        {{-- <div class="grid gap-4">
                 <div>
                     <a data-lightbox="image-1" href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
                         alt=""> <img class="h-auto max-w-full rounded-lg"
@@ -110,7 +115,7 @@
                     <img class="h-auto max-w-full rounded-lg"
                         src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
                 </div>
-            </div>
-        </div>
+            </div> --}}
+    </div>
     </div>
 @endsection

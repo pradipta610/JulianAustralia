@@ -5,11 +5,7 @@
             <p class="text-center font-semibold font-mono text-2xl text-gallery">Portrait</p>
             <div class="md:w-[70%] justify-center items-center mx-auto">
                 <p class="font-thin font-gallery-desc text-lg my-4 mx-2"> <span
-                        class="font-sans font-bold text-xl mr-2">"</span>Everyone has their own sense of style and
-                    personality - it's a special thing. You have the freedom to be 100% yourself. No restrictions,
-                    impositions, or having to pretend. Just be you! It could be anything from engaging in a particular
-                    hobby, showing off your favorite style, or being goofy and wild with friends around – what matters is
-                    that it's uniquely yours! <span class="font-bold text-xl ml-2">"</span></p>
+                        class="font-sans font-bold text-xl mr-2">"</span>Our goal is to create stunning images that showcase your individuality and tell your story. From professional headshots to personal portraits, we bring out the best in you through our photography. Explore our gallery and let us create a portrait that truly represents you at Julian Photography!<span class="font-bold text-xl ml-2">"</span></p>
             </div>
         </div>
         <div class="grid grid-cols md:grid-cols-4 gap-4">

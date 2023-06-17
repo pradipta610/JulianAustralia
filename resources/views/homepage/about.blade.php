@@ -28,36 +28,28 @@
                         <div class="flex flex-col md:flex-row my-8 justify-center items-center ">
                             <div class="w-full md:p-10">
                                 <div class="p-4">
-                                    <p class="font-serif text-color-desc-darker text-justify md:text-2xl mb-4">Hello So Nice
-                                        To Meet you!, Im Julian the founder and dreamer behind Julian Photography who's
-                                        passionate about making
-                                        those images come to life.</p>
+                                    <p class="font-serif text-color-desc-darker text-justify md:text-2xl mb-4">Hello! It's
+                                        such a pleasure to meet you. I'm Julian, the founder and visionary behind Julian
+                                        Photography. I'm incredibly passionate about bringing images to life and capturing
+                                        moments that truly resonate.</p>
                                 </div>
                             </div>
                             <div class="w-full  bg-orange-100 rounded-md ">
 
                                 <div class="p-8">
                                     <p class="font-serif text-color-desc-darker text-justify md:text-2xl mb-4">
-                                        <span>In my photography,</span> <br>
+                                        <span>Embarking on my photography journey,</span> <br>I utilize professional equipment and incorporate simple props. I
+                                        also employ editing techniques using software such as Photoshop and Lightroom to
+                                        achieve a style that brings me satisfaction. Additionally, I make slight adjustments
+                                        based on the specific needs and preferences of my clients.
 
+                                        I strive for uniqueness, embracing a natural and fresh outdoor aesthetic while
+                                        maintaining a sense of simplicity with a modern touch.
 
-                                        I'm using professional equipment and simple props and Edit by Photoshop & Lightroom
-                                        to get my style look that I'm happy with and also little adjust with my clients'
-                                        needs.
+                                        My goal not only capture moments that tell a story and unveil the art within photography, but also to create joy and happiness for all of you as we share and make memorable moments together.
 
-
-
-                                        my style trying to be unique, natural, fresh outdoor, keep it nice, simple, and also
-                                        modern touch.
-
-                                        ​
-
-                                        My goal is to capture that moment when that telling me the story and finding art in
-                                        photography.
-
-                                        ​
-
-                                        Get ready for your beautiful moment to be captured I'm so excited to meet you all.
+                                        Prepare yourself for the enchantment of having your beautiful moments captured. I am
+                                        thrilled and eagerly looking forward to meeting all of you.
                                     </p>
                                 </div>
                             </div>
@@ -65,12 +57,14 @@
                         <a
                             href="https://api.whatsapp.com/send?phone=+61 451 345 051&text=hey julian%20I%20want%20to%20make%20reservation%20">
                             <button type="button"
-                                class="text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><i
+                                class="text-gray-900  bg-green-500 from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><i
                                     class="fa-brands fa-whatsapp"></i> Whatsapp</button>
                         </a>
-                        <button type="button"
-                            class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><i
-                                class="fa-brands fa-instagram"></i> Instagram</button>
+                        <a href="https://instagram.com/julianphotographyinsydney?igshid=MjEwN2IyYWYwYw==">
+                            <button type="button"
+                                class="text-white bg-[#B70404] from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><i
+                                    class="fa-brands fa-instagram"></i> Instagram</button>
+                        </a>
                     </div>
                 </div>
 
