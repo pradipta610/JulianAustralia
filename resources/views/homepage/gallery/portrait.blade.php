@@ -8,103 +8,15 @@
                         class="font-sans font-bold text-xl mr-2">"</span>Our goal is to create stunning images that showcase your individuality and tell your story. From professional headshots to personal portraits, we bring out the best in you through our photography. Explore our gallery and let us create a portrait that truly represents you at Julian Photography!<span class="font-bold text-xl ml-2">"</span></p>
             </div>
         </div>
-        <div class="grid grid-cols md:grid-cols-4 gap-4">
-            <div class="grid gap-4">
-                <div>
-                    <a data-lightbox="image-1" href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
-                        alt=""> <img class="h-auto max-w-full rounded-lg"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt=""></a>
-                </div>
-                <div>
-                    <a data-lightbox="image-1" href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
-                        alt=""> <img class="h-auto max-w-full rounded-lg"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt=""></a>
-                </div>
-                <div>
-                    <a data-lightbox="image-1" href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
-                        alt=""> <img class="h-auto max-w-full rounded-lg"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt=""></a>
-                </div>
-                <div>
-                    <a data-lightbox="image-1" href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
-                        alt=""> <img class="h-auto max-w-full rounded-lg"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt=""></a>
-                </div>
-                <div>
-                    <a data-lightbox="image-1" href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
-                        alt=""> <img class="h-auto max-w-full rounded-lg"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt=""></a>
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div>
-                    <a data-lightbox="image-1" href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
-                        alt=""> <img class="h-auto max-w-full rounded-lg"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt=""></a>
-                </div>
-                <div>
-                    <a data-lightbox="image-1" href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
-                        alt=""> <img class="h-auto max-w-full rounded-lg"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt=""></a>
-                </div>
-                <div>
-                    <a data-lightbox="image-1" href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
-                        alt=""> <img class="h-auto max-w-full rounded-lg"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt=""></a>
-                </div>
-                <div>
-                    <a data-lightbox="image-1" href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
-                        alt=""> <img class="h-auto max-w-full rounded-lg"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt=""></a>
-                </div>
-                <div>
-                    <a data-lightbox="image-1" href="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
-                        alt=""> <img class="h-auto max-w-full rounded-lg"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt=""></a>
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
+        <div class=" bg-white block ">
+            <div class="md:py-0 px-4">
+                <div class="w-full max-w-7xl p-1 pb-10 mx-auto mb-10 gap-5 md:columns-3 columns-1 space-y-5">
+                    @foreach ($data as $item)
+                        <a data-lightbox="image-1" href="{{ url('/storage/images/baby/' . $item->image) }}"
+                            alt=""> <img class="h-auto max-w-full rounded-lg p-1"
+                                src="{{ url('/storage/images/baby/' . $item->image) }}" alt=""></a>
+                    @endforeach
+
                 </div>
             </div>
         </div>

@@ -36,7 +36,7 @@
                 <li>
                     <a href="{{ route('gallery.portrait') }}"
                         class="{{ (Route::currentRouteNamed('gallery.portrait')) ? 'bg-slate-200 ' : '' }} color block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:text-blue-700 md:p-0 "
-                        aria-current="page" >Portrait</a>
+                        aria-current="page" >Baby</a>
                 </li>
                 <li>
                     <a href="{{ route('gallery.event') }}"
@@ -45,7 +45,7 @@
                 </li>
                 <li>
                     <a href="{{ route('about') }}"
-                        class="{{ (Route::currentRouteNamed('about')) ? 'bg-orange-100' : '' }}  color block py-2 pl-3 pr-4 text-gray-900 rounded  md:border-0 md:hover:text-blue-700 md:p-0 ">About</a>
+                        class="{{ (Route::currentRouteNamed('about')) ? 'bg-slate-200' : '' }}  color block py-2 pl-3 pr-4 text-white rounded  md:bg-transparent md:hover:text-blue-700 md:p-0 ">About</a>
                 </li>
             </ul>
         </div>
