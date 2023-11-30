@@ -14,7 +14,6 @@
             <div class="text-center">
                 <button type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation"
                     aria-controls="drawer-navigation">
-                    <?xml version="1.0" encoding="utf-8"?>
                     <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
                     <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +38,7 @@
                 <div class="px-4 py-3">
                     <span class="block text-sm text-gray-900 dark:text-white">{{ auth()->user()->name }}</span>
                     <span class="block text-sm  text-gray-500 truncate dark:text-gray-400">As
-                        {{ $data->role->role_name }}</span>
+                        {{ $data->role['role_name'] }}</span>
                 </div>
                 <ul class="py-2" aria-labelledby="user-menu-button">
                     <li>

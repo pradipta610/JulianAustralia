@@ -2,15 +2,9 @@
 @section('content')
     <div class="p-4">
         <div class="p-4 md:text-center text-justify ">
-            <p class="text-center font-semibold font-mono text-2xl text-gallery">Family</p>
+            <p class="text-center font-semibold font-mono text-2xl text-gallery">{{ $description->title }}</p>
             <div class="md:w-[70%] justify-center items-center mx-auto">
-                <p class="font-thin font-gallery-desc text-lg my-4 mx-2"> <span
-                        class="font-sans font-bold text-xl mr-2">"</span>
-                    We understand the importance and meaning of family to you. Our commitment is to capture the
-                    togetherness, happiness, and strong bonds among your family members through our photography, allowing
-                    you to truly cherish moments with your loved ones. From traditional family portraits to candid and
-                    playful moments, we strive to capture the uniqueness and personalities of your family.<span
-                        class="font-bold text-xl ml-2">"</span></p>
+                <p class="font-thin font-gallery-desc text-lg my-4 mx-2"> {{ $description->descriptions }}</span></p>
             </div>
         </div>
         <div class=" bg-white block ">

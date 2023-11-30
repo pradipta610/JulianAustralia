@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Family;
+use App\Models\PageDescriptions;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator as FacadesValidator;
 use Illuminate\Support\Facades\Storage;
@@ -126,7 +127,8 @@ class FamilyController extends Controller
     public function showIndex(Family $family)
     {
         $data = Family::all();
-        return view('homepage.gallery.family', compact('data'));
+        $description = PageDescriptions::where('page_name','=','family')->first();
+        return view('homepage.gallery.family', compact('data', 'description'));
     }
 
     /**

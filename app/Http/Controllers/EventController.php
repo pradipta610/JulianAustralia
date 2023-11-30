@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Event;
+use App\Models\PageDescriptions;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator as FacadesValidator;
 use Illuminate\Support\Facades\Storage;
@@ -126,7 +127,8 @@ class EventController extends Controller
     public function showIndex(Event $event)
     {
         $data = Event::all();
-        return view('homepage.gallery.event', compact('data'));
+        $description = PageDescriptions::where('page_name','=','event')->first();
+        return view('homepage.gallery.event', compact('data','description'));
     }
 
     /**

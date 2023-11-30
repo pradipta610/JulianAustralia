@@ -2,10 +2,9 @@
 @section('content')
     <div class="p-4">
         <div class="p-4 md:text-center text-justify ">
-            <p class="text-center font-semibold font-mono text-2xl text-gallery">Portrait</p>
+            <p class="text-center font-semibold font-mono text-2xl text-gallery">{{ $description->title }}</p>
             <div class="md:w-[70%] justify-center items-center mx-auto">
-                <p class="font-thin font-gallery-desc text-lg my-4 mx-2"> <span
-                        class="font-sans font-bold text-xl mr-2">"</span>Our goal is to create stunning images that showcase your individuality and tell your story. From professional headshots to personal portraits, we bring out the best in you through our photography. Explore our gallery and let us create a portrait that truly represents you at Julian Photography!<span class="font-bold text-xl ml-2">"</span></p>
+                <p class="font-thin font-gallery-desc text-lg my-4 mx-2"> {{ $description->descriptions }}</span></p>
             </div>
         </div>
         <div class=" bg-white block ">

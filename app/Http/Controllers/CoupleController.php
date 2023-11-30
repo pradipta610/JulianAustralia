@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Couple;
+use App\Models\PageDescriptions;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\Storage;
@@ -128,7 +129,8 @@ class CoupleController extends Controller
     public function showIndex(Couple $couple)
     {
         $data = Couple::all();
-        return view('homepage.gallery.couple', compact('data'));
+        $description = PageDescriptions::where('page_name','=','couple')->first();
+        return view('homepage.gallery.couple', compact('data','description'));
     }
 
     /**

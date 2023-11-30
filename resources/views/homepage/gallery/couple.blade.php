@@ -2,13 +2,9 @@
 @section('content')
     <div class="p-4">
         <div class="p-4 md:text-center text-justify ">
-            <p class="text-center font-semibold font-mono text-2xl text-gallery">Couple</p>
+            <p class="text-center font-semibold font-mono text-2xl text-gallery">{{ $description->title }}</p>
             <div class="md:w-[70%] justify-center items-center mx-auto">
-                <p class="font-thin font-gallery-desc text-lg my-4 mx-2"> <span
-                        class="font-sans font-bold text-xl mr-2">"</span>Every story is unique . Our relaxed approach creates
-                    a comfortable atmosphere for authentic and emotional photographs. Explore our gallery for examples of
-                    our work and contact us to preserve your special moments.<span class="font-bold text-xl ml-2">"</span>
-                </p>
+                <p class="font-thin font-gallery-desc text-lg my-4 mx-2"> {{ $description->descriptions }}</span></p>
             </div>
         </div>
         <div class=" bg-white block ">

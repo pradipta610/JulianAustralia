@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Baby;
+use App\Models\PageDescriptions;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator as FacadesValidator;
 use Illuminate\Support\Facades\Storage;
@@ -126,7 +127,8 @@ class BabyController extends Controller
     public function showIndex(Baby $baby)
     {
         $data = Baby::all();
-        return view('homepage.gallery.portrait', compact('data'));
+        $description = PageDescriptions::where('page_name','=','baby')->first();
+        return view('homepage.gallery.portrait', compact('data','description'));
     }
 
     /**

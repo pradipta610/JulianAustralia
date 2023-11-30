@@ -5,6 +5,7 @@ use App\Http\Controllers\BabyController;
 use App\Http\Controllers\CoupleController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\FamilyController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SuperAdmin\SuperAdminController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,16 +19,18 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('storage-link', function(){
+    $target_folder = base_path().'/storage/app/public';
+    $linkFolder = $_SERVER['DOCUMENT_ROOT'].'/storage';
+    symlink($target_folder, $linkFolder);
+});
 Route::group(['middleware' => 'guest'], function () {
     Route::get('login', [AuthController::class, 'index'])->name('login');
     Route::post('login', [AuthController::class, 'loginProcess'])->name('loginProcess');
 });
 Route::POST('logout', [AuthController::class, 'logout'])->name('logout');
 
-Route::get('/', function () {
-    return view('homepage.index');
-})->name('home');
+Route::get('/', [HomeController::class, 'showIndex'])->name('home');
 Route::prefix('gallery')->name('gallery.')->group(function () {
     Route::get('/couple', [CoupleController::class, 'showIndex'])->name('couple');
 
@@ -56,6 +59,14 @@ Route::group(['middleware' => ['auth', 'checkrole:1']], function () {
     Route::prefix('superadmin')->group(function () {
         Route::prefix('dashboard')->group(function () {
             Route::get('/', [SuperAdminController::class, 'index'])->name('dashboardSuperAdmin');
+            Route::get('/create-image', [SuperAdminController::class, 'create'])->name('dashboardSuperAdmin.create');
+            Route::post('/create-image', [SuperAdminController::class, 'store'])->name('dashboardSuperAdmin.store');
+            Route::get('/create-massimage', [SuperAdminController::class, 'masscreate'])->name('dashboardSuperAdmin.masscreate');
+            Route::post('/create-massimage', [SuperAdminController::class, 'massstore'])->name('dashboardSuperAdmin.massstore');
+            Route::get('/update/{id}', [SuperAdminController::class, 'edit'])->name('dashboardSuperAdmin.edit');
+            Route::patch('/update/{id}', [SuperAdminController::class, 'update'])->name('dashboardSuperAdmin.update');
+            Route::delete('/destroy/{id}', [SuperAdminController::class, 'destroy'])->name('dashboardSuperAdmin.destroy');
+            Route::delete('/destroy-all', [SuperAdminController::class, 'destroyall'])->name('dashboardSuperAdmin.destroyall');
             Route::get('/update-page-description/{id}', [SuperAdminController::class, 'editPageDescriptions'])->name('editPageDescriptions');
             Route::patch('/update-page-description/{id}', [SuperAdminController::class, 'processEditPageDescriptions'])->name('processEditPageDescriptions');
             Route::prefix('admin-list')->group(function () {
@@ -88,22 +99,6 @@ Route::group(['middleware' => ['auth', 'checkrole:1,2']], function () {
         Route::patch('/update/{id}', [CoupleController::class, 'update'])->name('coupleGallery.update');
         Route::delete('/destroy/{id}', [CoupleController::class, 'destroy'])->name('coupleGallery.destroy');
         Route::delete('/destroy-all', [CoupleController::class, 'destroyall'])->name('coupleGallery.destroyall');
-        // Route::prefix('admin-list')->group(function () {
-        //     Route::get('/', [SuperAdminController::class, 'adminList'])->name('adminList');
-        //     Route::get('/edit/{id}', [SuperAdminController::class, 'editadminList'])->name('adminList.edit');
-        //     Route::patch('/edit/{id}', [SuperAdminController::class, 'updateadminList'])->name('adminList.update');
-        //     Route::get('/create', [SuperAdminController::class, 'createadminList'])->name('adminList.create');
-        //     Route::post('/create', [SuperAdminController::class, 'createprocessadminList'])->name('adminList.store');
-        //     Route::delete('/delete/{id}', [SuperAdminController::class, 'deleteadminList'])->name('adminList.delete');
-        // });
-        // Route::prefix('superadmin-list')->group(function () {
-        //     Route::get('/', [SuperAdminController::class, 'superadminList'])->name('superadminList');
-        //     Route::get('/edit/{id}',  [SuperAdminController::class, 'editsuperadminList'])->name('superadminList.edit');
-        //     Route::patch('/edit/{id}',  [SuperAdminController::class, 'updatesuperadminList'])->name('superadminList.update');
-        //     Route::get('/create', [SuperAdminController::class, 'createsuperadminList'])->name('superadminList.create');
-        //     Route::post('/create', [SuperAdminController::class, 'createprocesssuperadminList'])->name('superadminList.store');
-        //     Route::delete('/delete/{id}', [SuperAdminController::class, 'deletesuperadminList'])->name('superadminList.delete');
-        // });
     });
     Route::prefix('family')->group(function () {
         Route::get('/', [FamilyController::class, 'index'])->name('familyGallery');
@@ -115,22 +110,6 @@ Route::group(['middleware' => ['auth', 'checkrole:1,2']], function () {
         Route::patch('/update/{id}', [FamilyController::class, 'update'])->name('familyGallery.update');
         Route::delete('/destroy/{id}', [FamilyController::class, 'destroy'])->name('familyGallery.destroy');
         Route::delete('/destroy-all', [FamilyController::class, 'destroyall'])->name('familyGallery.destroyall');
-        // Route::prefix('admin-list')->group(function () {
-        //     Route::get('/', [SuperAdminController::class, 'adminList'])->name('adminList');
-        //     Route::get('/edit/{id}', [SuperAdminController::class, 'editadminList'])->name('adminList.edit');
-        //     Route::patch('/edit/{id}', [SuperAdminController::class, 'updateadminList'])->name('adminList.update');
-        //     Route::get('/create', [SuperAdminController::class, 'createadminList'])->name('adminList.create');
-        //     Route::post('/create', [SuperAdminController::class, 'createprocessadminList'])->name('adminList.store');
-        //     Route::delete('/delete/{id}', [SuperAdminController::class, 'deleteadminList'])->name('adminList.delete');
-        // });
-        // Route::prefix('superadmin-list')->group(function () {
-        //     Route::get('/', [SuperAdminController::class, 'superadminList'])->name('superadminList');
-        //     Route::get('/edit/{id}',  [SuperAdminController::class, 'editsuperadminList'])->name('superadminList.edit');
-        //     Route::patch('/edit/{id}',  [SuperAdminController::class, 'updatesuperadminList'])->name('superadminList.update');
-        //     Route::get('/create', [SuperAdminController::class, 'createsuperadminList'])->name('superadminList.create');
-        //     Route::post('/create', [SuperAdminController::class, 'createprocesssuperadminList'])->name('superadminList.store');
-        //     Route::delete('/delete/{id}', [SuperAdminController::class, 'deletesuperadminList'])->name('superadminList.delete');
-        // });
     });
     Route::prefix('baby')->group(function () {
         Route::get('/', [BabyController::class, 'index'])->name('babyGallery');
@@ -142,22 +121,6 @@ Route::group(['middleware' => ['auth', 'checkrole:1,2']], function () {
         Route::patch('/update/{id}', [BabyController::class, 'update'])->name('babyGallery.update');
         Route::delete('/destroy/{id}', [BabyController::class, 'destroy'])->name('babyGallery.destroy');
         Route::delete('/destroy-all', [BabyController::class, 'destroyall'])->name('babyGallery.destroyall');
-        // Route::prefix('admin-list')->group(function () {
-        //     Route::get('/', [SuperAdminController::class, 'adminList'])->name('adminList');
-        //     Route::get('/edit/{id}', [SuperAdminController::class, 'editadminList'])->name('adminList.edit');
-        //     Route::patch('/edit/{id}', [SuperAdminController::class, 'updateadminList'])->name('adminList.update');
-        //     Route::get('/create', [SuperAdminController::class, 'createadminList'])->name('adminList.create');
-        //     Route::post('/create', [SuperAdminController::class, 'createprocessadminList'])->name('adminList.store');
-        //     Route::delete('/delete/{id}', [SuperAdminController::class, 'deleteadminList'])->name('adminList.delete');
-        // });
-        // Route::prefix('superadmin-list')->group(function () {
-        //     Route::get('/', [SuperAdminController::class, 'superadminList'])->name('superadminList');
-        //     Route::get('/edit/{id}',  [SuperAdminController::class, 'editsuperadminList'])->name('superadminList.edit');
-        //     Route::patch('/edit/{id}',  [SuperAdminController::class, 'updatesuperadminList'])->name('superadminList.update');
-        //     Route::get('/create', [SuperAdminController::class, 'createsuperadminList'])->name('superadminList.create');
-        //     Route::post('/create', [SuperAdminController::class, 'createprocesssuperadminList'])->name('superadminList.store');
-        //     Route::delete('/delete/{id}', [SuperAdminController::class, 'deletesuperadminList'])->name('superadminList.delete');
-        // });
     });
     Route::prefix('event')->group(function () {
         Route::get('/', [EventController::class, 'index'])->name('eventGallery');
@@ -169,21 +132,5 @@ Route::group(['middleware' => ['auth', 'checkrole:1,2']], function () {
         Route::patch('/update/{id}', [EventController::class, 'update'])->name('eventGallery.update');
         Route::delete('/destroy/{id}', [EventController::class, 'destroy'])->name('eventGallery.destroy');
         Route::delete('/destroy-all', [EventController::class, 'destroyall'])->name('eventGallery.destroyall');
-        // Route::prefix('admin-list')->group(function () {
-        //     Route::get('/', [SuperAdminController::class, 'adminList'])->name('adminList');
-        //     Route::get('/edit/{id}', [SuperAdminController::class, 'editadminList'])->name('adminList.edit');
-        //     Route::patch('/edit/{id}', [SuperAdminController::class, 'updateadminList'])->name('adminList.update');
-        //     Route::get('/create', [SuperAdminController::class, 'createadminList'])->name('adminList.create');
-        //     Route::post('/create', [SuperAdminController::class, 'createprocessadminList'])->name('adminList.store');
-        //     Route::delete('/delete/{id}', [SuperAdminController::class, 'deleteadminList'])->name('adminList.delete');
-        // });
-        // Route::prefix('superadmin-list')->group(function () {
-        //     Route::get('/', [SuperAdminController::class, 'superadminList'])->name('superadminList');
-        //     Route::get('/edit/{id}',  [SuperAdminController::class, 'editsuperadminList'])->name('superadminList.edit');
-        //     Route::patch('/edit/{id}',  [SuperAdminController::class, 'updatesuperadminList'])->name('superadminList.update');
-        //     Route::get('/create', [SuperAdminController::class, 'createsuperadminList'])->name('superadminList.create');
-        //     Route::post('/create', [SuperAdminController::class, 'createprocesssuperadminList'])->name('superadminList.store');
-        //     Route::delete('/delete/{id}', [SuperAdminController::class, 'deletesuperadminList'])->name('superadminList.delete');
-        // });
     });
 });
